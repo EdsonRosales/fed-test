@@ -29,7 +29,8 @@ body {
  */
 
 main {
-    display: block;
+    display: grid;
+    background-color: #202427;
 }
 
 /**

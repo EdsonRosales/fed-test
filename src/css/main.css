@@ -57,8 +57,14 @@
   margin-bottom: 30px;
   text-align: center;
 }
+.layout_title {
+  background-color: #1A1D20;
+  color: white;
+}
 
 /* Begin styling the report items here! */
 .reports {
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 30px; /* Gap between grid items */
 }
