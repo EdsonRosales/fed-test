@@ -57,8 +57,37 @@
   margin-bottom: 30px;
   text-align: center;
 }
+.layout_title {
+  background-color: #1A1D20;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
 
 /* Begin styling the report items here! */
 .reports {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.reports_docs {
+  padding: 10px;
+  font-size: 0;
+  background-color: #1A1D20;
+  border-radius: 5px;
+}
+.reports_title {
+  color: white;
+  text-align: center;
+}
+.reports_info {
+  color: #7E8182;
+  font-weight: bold;
+}
 
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .reports {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
 }
