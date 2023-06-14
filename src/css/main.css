@@ -65,6 +65,13 @@
 /* Begin styling the report items here! */
 .reports {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-  grid-gap: 30px; /* Gap between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .reports {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
 }
